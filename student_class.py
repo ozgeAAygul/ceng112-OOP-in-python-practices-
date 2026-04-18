@@ -1,3 +1,4 @@
+# Task 1: Create a Student class with name and age attributes and print student info.
 class Student:
   def __init__(self, name, age):
     self.name = name

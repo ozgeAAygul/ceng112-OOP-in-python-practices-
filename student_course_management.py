@@ -1,3 +1,4 @@
+# Task 7: Create Student class with course management functionality.
 class Person:
   def __init__(self, name, age):
     self.__name = name

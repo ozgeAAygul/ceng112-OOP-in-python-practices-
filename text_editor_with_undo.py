@@ -1,3 +1,4 @@
+# Task 8: Implement a TextEditor with undo and redo functionality using a Stack.
 class Stack:
   def __init__(self):
     self.elements = []

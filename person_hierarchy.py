@@ -1,3 +1,4 @@
+# Task 6: Create Person hierarchy with Student and Teacher classes, including method overriding and equality checks.
 class Person:
   def __init__(self, name):
     self.name = name
@@ -13,7 +14,7 @@ class Student(Person):
     super().__init__(name)
     self.grade = grade
 
-  def introduce(self): #override örneği
+  def introduce(self): # override example
     print(f"Hi, I'm {self.name} and my grade is {self.grade}")
   
   def __str__(self):
@@ -24,7 +25,7 @@ class Student(Person):
       return False
     return self.name == other.name and self.grade == other.grade
 
-#bunun gibi person olan spesifik classlar türetebilirsiniz
+# You can derive specific classes like this from Person
 class Teacher(Person):
   def __init__(self, name, salary):
     super().__init__(name)
@@ -36,7 +37,7 @@ class Teacher(Person):
   def __str__(self):
     return f"Teacher(name={self.name}, salary={self.salary})"
 
-#bu da polymorphism
+# This is also polymorphism
 def printInfo(person):
   person.introduce()
 

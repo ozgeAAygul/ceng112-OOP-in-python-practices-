@@ -1,3 +1,4 @@
+# Task 5: Demonstrate inheritance and polymorphism with Animal, Dog, and Cat classes.
 class Animal:
   def __init__(self, name):
     self.name = name
@@ -9,7 +10,7 @@ class Dog(Animal):
     super().__init__(name)
 
   def speak(self):
-    print(f"{self.name} says Hav hav") # eğer pass yazsaydık animaldan alacaktı ve kodu çalıştırdığımızda terminalde animal make sound yazısını görcektik.
+    print(f"{self.name} says Hav hav") # If we wrote 'pass', it would inherit from Animal and print 'Animal make sound' when running the code.
 
 class Cat(Animal):
   def __init__(self, name):
@@ -26,10 +27,10 @@ c = Cat("miyen")
 a.speak()
 d.speak()
 c.speak()
-bu şekilde de tek tek çalıştırabilirdik.
+# We could also run them one by one this way.
 '''
 
-#Bu yöntem polymorphism olarak adlandırılır
+# This method is called polymorphism
 animals = [Dog("chris"), Cat("miyen"), Dog("mike")]
 
 for a in animals:

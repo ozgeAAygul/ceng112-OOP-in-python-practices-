@@ -1,3 +1,4 @@
+# Task 2: Create a Rectangle class to calculate area and perimeter.
 class Rectangle:
   def __init__(self, width, height):
     self.width = width
